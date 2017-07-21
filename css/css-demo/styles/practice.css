@@ -14,3 +14,7 @@ border-radius: 5px;
 .accomplishments {
   font-size: .8em;
 }
+
+section > h3 {
+  color: white;
+}
