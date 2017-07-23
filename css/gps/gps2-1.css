@@ -1,0 +1,41 @@
+body {
+  background-color: yellow;
+  font-family: Helvetica;
+}
+.column-1 {
+  background-color: pink;
+  border: 2px dotted red;
+}
+
+.column-2 {
+  background-color: green;
+  border: 2px dotted black;
+  color: white;
+}
+
+.column-1, .column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  padding: 1%;
+  margin: 1%;
+}
+
+header, footer {
+  text-align: center;
+  background-color: lightblue;
+  padding: 1%;
+  margin: 1%;
+}
+
+li:hover {
+  color: red;
+}
+
+a {
+  color: purple;
+}
+
+img {
+  width: 60%;
+}
