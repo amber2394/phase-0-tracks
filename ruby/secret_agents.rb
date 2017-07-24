@@ -7,10 +7,15 @@ fdsa = 5
 fd = 100000000000000
 puts add(asdf,fdsa,fd)
 =end
+
 #Pseudocode Encrypt
-#- need .next
+#- Define each letter of the string
+#- If the string contains a space then pass in a space
+#- If no space is present set the index of a character to z
+
 #Pseudocode Decrpyt
 #- define alphabet as string
+
 =begin
 password = "aaabbb"
 password[3] = "b"
@@ -20,6 +25,7 @@ alpha[1-1] = "a"
 -2: find index of alphabet character using individual letter of
     original string
 =end
+
 def encrypt(password)
     index = 0
     while index < password.length
