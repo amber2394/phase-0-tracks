@@ -16,6 +16,16 @@ if age == ""
   age = nil
 end
 
+puts "Your hamster's name is #{hamsters_name}!"
+puts "Your hamster's volume level is #{volume_level}."
+puts "Your hamster's fur color is #{fur_color}."
+if good_candidate == "y"
+  puts "Your hamster is a good candidate!"
+else
+  puts "Sorry, your hamster is not a good candidate. :("
+end
+puts "The estimated age of your hamster is #{age}."
+
 
 
 
