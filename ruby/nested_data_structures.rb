@@ -38,3 +38,10 @@ fashion_show = {
         ]
     }
 }
+
+p fashion_show[:marc_jacobs][:seating_info][:front_row_seats_available]
+
+p fashion_show[:louis_vuiton][:models]
+fashion_show[:calvin_klein][:models].push ("Lenny Rutz"), ("Kelly Birch"), ("Monica Raul")
+
+p fashion_show[:calvin_klein][:models]
