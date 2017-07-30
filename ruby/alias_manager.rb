@@ -12,3 +12,23 @@
 7. Employ a method to move each constenant to the next consenant
   - For 6 & 7 maybe using some combination of .next and index?
 =end
+
+  def vowel_adv(str)
+    puts "What is your name?"
+    name = gets.chomp.downcase.reverse
+    vowels = ["a", "e", "i", "o", "u"]
+    cons = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
+    str = name.split('')
+    str_new = str.map! do |char|
+      if vowels.include?(char)
+        vowels.rotate(1)[vowels.index(char)]
+      elsif cons.include?(char)
+       cons.rotate(1)[cons.index(char)]
+      else
+        char
+      end
+  end
+puts "Your secret agent name is:"
+str_new.join.reverse.split.map(&:capitalize).reverse.join(' ')
+end
+puts vowel_adv "aeiou"
