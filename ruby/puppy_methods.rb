@@ -20,6 +20,10 @@ class Puppy
   def down
     puts "*lays down*"
   end
+
+  def initialize
+    puts "Initializing new puppy instance ..."
+  end
 end
 
 Puppy.new
