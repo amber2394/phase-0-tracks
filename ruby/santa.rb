@@ -42,12 +42,16 @@ class Santa
 end
 
 
+=begin
+
+DRIVER CODE
 
 nicholas = Santa.new("female", "black")
 nicholas.speak
 nicholas.eat_milk_and_cookies("snickerdoodle")
 nicholas.age
 nicholas.ethnicity
+=end
 
 =begin
 santas = []
@@ -60,11 +64,20 @@ santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 santas << Santa.new("N/A", "N/A")
 =end
 
-=begin
+
 santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
-=end
+
+
+santas = 0
+until santas >= 10
+puts "Here is your new Santa!:"
+p example_genders.sample
+p example_ethnicities.sample
+p age = rand(0..140)
+santas += 1
+end
