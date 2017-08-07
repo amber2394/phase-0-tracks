@@ -29,3 +29,9 @@ def initialize(user1_input)
       x = "_"
     end
   end
+
+=begin
+
+I really wasn't sure where to go after this, I'm honestly really stuck.
+
+=end
