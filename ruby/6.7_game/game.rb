@@ -23,7 +23,9 @@ class WordGame
 def initialize(user1_input)
     @user1_input = user1_input.split("")
     @passed_guesses = []
-    @guesses = 7 + user1_input.length
+    @guesses = 10 + user1_input.length
     @tries = 0
-    @hidden = @user1_input.map { |x| x = "_"}
+    @hidden = @user1_input.map do |x|
+      x = "_"
+    end
   end
