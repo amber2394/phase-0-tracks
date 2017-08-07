@@ -24,4 +24,7 @@ end
 
 Puppy.new
 spot = Puppy.new
-spot.fetch(ball)
+spot.speak(3)
+spot.roll_over
+puts spot.dog_years(3)
+spot.down
