@@ -71,3 +71,17 @@ add_item(grocery_list, "peanut butter", 1)
 remove_item(grocery_list, "cereal")
 update_item(grocery_list, "peanut butter", 2)
 pretty_list(grocery_list)
+
+=begin
+1. I definitely learned that I should be making pseudocode a little more specific. The better your pseudocode, the easier it will be to write your actual code.
+
+2. Arrays are great when you have a simple list of data (milk, bread, cheese, etc.) however, since this challenge involves a grocery item AND an input a hash worked better because it allows your to store mulitple connected pieces of data.
+
+3. A method returns the last bit of code inside of it.
+
+4. You can pass nearly any data type into a method as an argument: integers, strings, booleans, etc.
+
+5. A method can be used as an argument for another method.
+
+6. I struggled with the general concept of methods for a while until I reviewed the Code Academy course. This challenge really put what I learned into practice and solidifed defining and using methods. This challenge especially solidified the syntax of methods.
+=end
