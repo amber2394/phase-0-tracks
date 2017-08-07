@@ -1,3 +1,5 @@
+grocery_list = {}
+
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps:
@@ -62,3 +64,10 @@ def pretty_list(list)
   end
      list
 end
+
+create_list("apples peaches carrots milk bread butter")
+add_item(grocery_list, "cereal", 1)
+add_item(grocery_list, "peanut butter", 1)
+remove_item(grocery_list, "cereal")
+update_item(grocery_list, "peanut butter", 2)
+pretty_list(grocery_list)
