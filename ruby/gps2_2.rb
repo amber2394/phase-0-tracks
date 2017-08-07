@@ -8,6 +8,14 @@
   # 5. Print the list to the console [can you use one of your other methods here?]
 # output: A hash
 
+def create_list(string)
+    grocery_list = Hash.new
+      string.split(" ").each do |item|
+      grocery_list.store(item, 1)
+      grocery_list
+    end
+end
+
 # Method to add an item to a list
 # input: list, item name, and quantity
 # steps:
