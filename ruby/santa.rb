@@ -1,4 +1,6 @@
 class Santa
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
 
   def initialize(gender, ethnicity)
     @gender = gender
@@ -24,17 +26,19 @@ class Santa
     puts "#{@reindeer_ranking.rotate(1)}"
   end
 
-  def new_gender=(gender)
-    @gender = gender
-  end
+#setter method
+#  def new_gender=(gender)
+#    @gender = gender
+#  end
 
-  def age
-    @age
-   end
+#getter methods
+#  def age
+#    @age
+#   end
 
-  def ethnicity
-    @ethnicity
-  end
+#  def ethnicity
+#    @ethnicity
+#  end
 end
 
 
