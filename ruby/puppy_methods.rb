@@ -7,3 +7,6 @@ class Puppy
 
 end
 
+Puppy.new
+spot = Puppy.new
+spot.fetch(ball)
