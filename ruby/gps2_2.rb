@@ -22,11 +22,21 @@ end
 # 1. Feed the item name and quantity (or default) to the list
 # output: An updated list
 
+def add_item(list, item, quantity = 1)
+    list.store(item, quantity)
+    list
+end
+
 # Method to remove an item from the list
 # input: list, the name of the item to remove
 # steps:
 # 1. Iterate over list and hash and remove item
 # output: An updated list
+
+def remove_item(list, item)
+    list.delete(item)
+    list
+end
 
 # Method to update the quantity of an item
 # input: list, item name, updated quantity
@@ -34,8 +44,21 @@ end
 # 1. Feed the item and the new quantity to the list (it will overwrite existing quantity)
 # output: An updated list
 
+def update_item(list, item, quantity)
+  list[item] = quantity
+  list
+end
+
 # Method to print a list and make it look pretty
 # input: list
 # steps:
 # 1. Iterate over the hash and puts to print
 # output: A pretty list
+
+def pretty_list(list)
+  puts "Grocery List"
+  list.each do |item, quantity|
+    puts "#{item}: #{quantity}"
+  end
+     list
+end
