@@ -12,4 +12,6 @@ function reverse(str) {
   return a;
 }
 
+var reversedWord = (reverse("hello"));
+console.log(reversedWord);
 console.log(reverse("hello"))
