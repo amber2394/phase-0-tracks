@@ -15,3 +15,9 @@ function reverse(str) {
 var reversedWord = (reverse("hello"));
 console.log(reversedWord);
 console.log(reverse("hello"))
+
+if (reversedWord == (reverse("hello"))) {
+  console.log("Your variable has been stored!");
+} else if (reversedWord != (reverse("hello"))) {
+  console.log("Sorry, your variable cannot be stored at this time.")
+}
