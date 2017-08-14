@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself].
+# We spent [1] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # require_relative allows a developer to access files that are in relation to the file containing the require_relative statement. Often used for files not intended for outside use such as test data
@@ -99,3 +99,16 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+
+#1. What are the differences between the two different hash syntaxes shown in the state_data file?
+# One is a long hand syntax, using the rocket operator and the other is shorthand using the colon.
+#2. What does require_relative do? How is it different from require?
+# require_relative allows a developer to access files that are in relation to the file containing the require_relative statement. Often used for files not intended for outside use such as test data. It is different from require because require often loads data that has been downloaded and made available in your system. require does not offer a good solution for loading files within the project’s code.
+#3. What are some ways to iterate through a hash?
+# Use .each in a do/end loop.
+# Use .sort on a hash and then use .each to iterate through the now nested arrays
+#using each_key or each_value
+#4. When refactoring virus_effects, what stood out to you about the variables, if anything?
+# I don't think I have the concept of refractoring down well yet. However, I will go over this with me guide during my code review.
+#5. What concept did you most solidify in this challenge?
+# This challenge mostly solidfied the use of classes and attributes. It was really great in showing me how they work and demonstrating the capabilities of them.
