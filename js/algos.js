@@ -1,3 +1,4 @@
+// PSEUDOCODE:
 // Create an array 'phrases' with a variety of phrases in different lengths
 // Define a variable lgth set to the value 0
 // Define an empty variable longest to be used in the loop
@@ -49,6 +50,3 @@ console.log("Comparison results" + ": " + checkIfObjectContains(students_a, stud
 console.log("Comparison results" + ": " + checkIfObjectContains(students_b, students_c));
 console.log("Comparison results" + ": " + checkIfObjectContains(students_c, students_b));
 console.log("Comparison results" + ": " + checkIfObjectContains(students_c, students_a));
-
-
-
