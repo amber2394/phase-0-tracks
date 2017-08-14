@@ -4,8 +4,8 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# require_relative allows a developer to access files that are in relation to the file containing the require_relative statement. Often used for files not intended for outside use such as test data
+
 require_relative 'state_data'
 
 class VirusPredictor
