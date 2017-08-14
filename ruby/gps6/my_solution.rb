@@ -10,11 +10,15 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+#This instance method is creating attributes for state, population, and population density. The attributes allow a developer access to these variable through the class VirusPredictor's instance methods.
+
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
+
+#This instance method is passing in multiple attributes to a condensed form in relation to predicted deaths and the speed of spread
 
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
@@ -22,6 +26,8 @@ class VirusPredictor
   end
 
   private
+
+#This instance method is taking the attribute of population density and and setting the number of deaths in proportion to the population times a decimal and roudning that number down with the .floor method. Here we are setting the number of deaths to a state by population density and printing.
 
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
@@ -40,6 +46,8 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
+
+# This instance method is calculating the speed of thread by setting the value of speed in relation to the population density. This method also prints onto a new line.
 
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
