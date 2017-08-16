@@ -1,4 +1,4 @@
-grocery_list = {}
+#grocery_list = {}
 
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
@@ -12,10 +12,10 @@ grocery_list = {}
 
 def create_list(string)
     grocery_list = Hash.new
-      string.split(" ").each do |item|
+    string.split.each do |item|
       grocery_list.store(item, 1)
-      grocery_list
     end
+    grocery_list
 end
 
 # Method to add an item to a list
@@ -27,6 +27,8 @@ end
 def add_item(list, item, quantity = 1)
     list.store(item, quantity)
     list
+    #list.haskey? item -if it exists update and if it doesn't exist update.
+    #if/else
 end
 
 # Method to remove an item from the list
@@ -49,6 +51,7 @@ end
 def update_item(list, item, quantity)
   list[item] = quantity
   list
+#if/else
 end
 
 # Method to print a list and make it look pretty
@@ -62,8 +65,9 @@ def pretty_list(list)
   list.each do |item, quantity|
     puts "#{item}: #{quantity}"
   end
-     list
+  list
 end
+
 
 create_list("apples peaches carrots milk bread butter")
 add_item(grocery_list, "cereal", 1)
@@ -85,3 +89,5 @@ pretty_list(grocery_list)
 
 6. I struggled with the general concept of methods for a while until I reviewed the Code Academy course. This challenge really put what I learned into practice and solidifed defining and using methods. This challenge especially solidified the syntax of methods.
 =end
+
+#Capture method output
