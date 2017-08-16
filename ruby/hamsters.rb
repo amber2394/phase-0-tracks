@@ -1,30 +1,36 @@
-puts "What is the hamster's name?"
-hamsters_name = gets.chomp
 
-puts "What is the volume level? (1-10)"
-volume_level = gets.to_i
+# 2.
+# Guess the return value of this line:
 
-puts "What is the hamster's fur color?"
-fur_color = gets.chomp
+# airplane[:business_class][:meals]
 
-puts "Is the hamster a good candidate for adoption? (y/n)"
-good_candidate = gets.chomp
+# Then uncomment the line above and check your guess.
 
-puts "What is the estimated age of the hamster?"
-age = gets.to_i
-if age == ""
-  age = nil
-end
+# 3.
+# Guess the return value of this line:
 
-puts "Your hamster's name is #{hamsters_name}!"
-puts "Your hamster's volume level is #{volume_level}."
-puts "Your hamster's fur color is #{fur_color}."
-if good_candidate == "y"
-  puts "Your hamster is a good candidate!"
-else
-  puts "Sorry, your hamster is not a good candidate. :("
-end
-puts "The estimated age of your hamster is #{age}."
+# airplane[:business_class][:meals][1]
+
+# Then uncomment the line above and check your guess.
+
+# 4.
+# How will this line affect the data structure?
+
+# airplane[:coach][:meals].push("Sad Plastic Tray of Corn")
+# p airplane[:coach][:meals]
+
+# Uncomment the lines above and check your guess by adding a line that prints the new data structure.
+
+# 5.
+# How would you reverse the meals list in First Class?
+
+# Add a line of code that does that here.
+#airplane[:first_class][:meals].reverse
+
+# 6.
+# How would you lowercase the pretty name of one of the classes?
+# airplane[:coach][:pretty_name].downcase
+# Add a line of code that does that here.
 
 
 

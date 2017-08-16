@@ -4,7 +4,7 @@
 # We spent [1] hours on this challenge.
 
 # EXPLANATION OF require_relative
-# require_relative allows a developer to access files that are in relation to the file containing the require_relative statement. Often used for files not intended for outside use such as test data
+# require_relative allows a developer to access files that are in relation to the file containing the require_relative statement. Often used for files not intended for outside use such as test data. For require you would have to give the full path to the file.
 
 require_relative 'state_data'
 
@@ -21,15 +21,17 @@ class VirusPredictor
 #This instance method is passing in multiple attributes to a condensed form in relation to predicted deaths and the speed of spread
 
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths #(@population_density, @population, @state)
+    speed_of_spread #(@population_density, @state)
   end
 
   private
 
 #This instance method is taking the attribute of population density and and setting the number of deaths in proportion to the population times a decimal and roudning that number down with the .floor method. Here we are setting the number of deaths to a state by population density and printing.
 
-  def predicted_deaths(population_density, population, state)
+# Instance variables do not require arguments to be passed
+
+  def predicted_deaths # (population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -76,6 +78,8 @@ end
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
+
+ #name variables more specific
 
   STATE_DATA.each do |key, value|
   state = VirusPredictor.new(key, value[:population_density], value[:population])

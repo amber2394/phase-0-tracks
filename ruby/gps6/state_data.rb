@@ -1,6 +1,9 @@
 #population density is number of people per square mile as of 2012
 #this data is updated every year with estimates from a 10 year census
 
+#STATE_DATA is a constant variable
+#constant variable - all caps, scope is global (can call anywhere in the file). Not meant to change data.
+
 
 STATE_DATA = {
   "Alabama" => {population_density: 94.65, population: 4822023},
