@@ -1,0 +1,48 @@
+SELECT * FROM songs;
+
+1|Pon de Replay|4|1
+2|Love on Top|2|2
+3|Dangerously in Love|1|2
+4|Empire State of Mind|1|3
+5|Rocket|7|2
+6|Fire We Make|5|4
+
+
+UPDATE songs SET billboard = 4 WHERE id = 4;
+SELECT * FROM songs;
+
+1|Pon de Replay|4|1
+2|Love on Top|2|2
+3|Dangerously in Love|1|2
+4|Empire State of Mind|4|3
+5|Rocket|7|2
+6|Fire We Make|5|4
+
+
+SELECT * FROM songs, artists WHERE songs.artists_id = artists.id;
+
+1|Pon de Replay|4|1|1|Rihanna
+2|Love on Top|2|2|2|Beyonce
+3|Dangerously in Love|1|2|2|Beyonce
+4|Empire State of Mind|4|3|3|Jay-Z
+5|Rocket|7|2|2|Beyonce
+6|Fire We Make|5|4|4|Alicia Keys
+
+
+SELECT songs.name, artists.name FROM songs JOIN artists ON songs.artists_id = artists.id;
+
+Pon de Replay|Rihanna
+Love on Top|Beyonce
+Dangerously in Love|Beyonce
+Empire State of Mind|Jay-Z
+Rocket|Beyonce
+Fire We Make|Alicia Keys
+
+DELETE FROM songs WHERE id = 2;
+SELECT * FROM songs;
+
+1|Pon de Replay|4|1
+3|Dangerously in Love|1|2
+4|Empire State of Mind|4|3
+5|Rocket|7|2
+6|Fire We Make|5|4
