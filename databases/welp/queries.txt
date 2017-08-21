@@ -1,0 +1,29 @@
+Attempts at joining 3 tables:
+
+
+SELECT * FROM businesses, reviews, users WHERE reviews.business_id = businesses.id, reviews.user_id = users.id;
+
+Error: near ",": syntax error
+
+
+SELECT * FROM businesses, reviews, users WHERE reviews.business_id =businesses.id reviews.user_id = users.id;
+
+Error: near "reviews": syntax error
+
+
+SELECT * FROM businesses, reviews, users WHERE reviews.business_id = businesses.id WHERE review.user_id = users.id;
+
+Error: near "WHERE": syntax error
+
+
+SELECT * FROM businesses, reviews, users WHERE reviews.business_id = businesses.id;
+
+1|Grundy Hollow Wedding Chapel|1|4|Great food, okay service|1|3|1|Bradford|Pitt
+1|Grundy Hollow Wedding Chapel|1|4|Great food, okay service|1|3|2|Steven|Wonder
+1|Grundy Hollow Wedding Chapel|1|4|Great food, okay service|1|3|3|Holly|Berry
+2|Lotus Yoga|2|2|Wouldn't come here again|2|1|1|Bradford|Pitt
+2|Lotus Yoga|2|2|Wouldn't come here again|2|1|2|Steven|Wonder
+2|Lotus Yoga|2|2|Wouldn't come here again|2|1|3|Holly|Berry
+1|Grundy Hollow Wedding Chapel|3|5|Great food, amazing service|1|2|1|Bradford|Pitt
+1|Grundy Hollow Wedding Chapel|3|5|Great food, amazing service|1|2|2|Steven|Wonder
+1|Grundy Hollow Wedding Chapel|3|5|Great food, amazing service|1|2|3|Holly|Berry
